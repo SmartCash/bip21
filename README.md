@@ -1,7 +1,5 @@
-# bip21
-
-[![build status](https://secure.travis-ci.org/bitcoinjs/bip21.png)](http://travis-ci.org/bitcoinjs/bip21)
-[![Version](http://img.shields.io/npm/v/bip21.svg)](https://www.npmjs.org/package/bip21)
+# bip21-smart
+[![Version](http://img.shields.io/npm/v/bip21-smart.svg)](https://www.npmjs.org/package/bip21-smart)
 
 A [BIP21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) compatible URL encoding library.
 
@@ -9,12 +7,12 @@ A [BIP21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) compat
 ## Example
 
 ``` javascript
-var bip21 = require('bip21')
+var bip21 = require('bip21-smart')
 
-var decoded = bip21.decode('bitcoin:1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH?amount=20.3&label=Foobar')
+var decoded = bip21.decode('smartcash:Sfra8YaJ5UL7R6ZMg3ZH2pZLcDQP71vFQ5?amount=20.3&label=Foobar')
 
 console.log(decoded)
-// { address: '1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH',
+// { address: 'Sfra8YaJ5UL7R6ZMg3ZH2pZLcDQP71vFQ5',
 //   options: {
 //     amount: 20.3,
 //     label: 'Foobar' }
@@ -22,14 +20,14 @@ console.log(decoded)
 //
 // WARNING: Remember to error check the `.address`!
 
-console.log(bip21.encode('1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH'))
-// => bitcoin:1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH
+console.log(bip21.encode('Sfra8YaJ5UL7R6ZMg3ZH2pZLcDQP71vFQ5'))
+// => smartcash:Sfra8YaJ5UL7R6ZMg3ZH2pZLcDQP71vFQ5
 
-console.log(bip21.encode('1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH', {
+console.log(bip21.encode('Sfra8YaJ5UL7R6ZMg3ZH2pZLcDQP71vFQ5', {
 	amount: 20.3,
 	label: 'Foobar'
 }))
-// => bitcoin:1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH?amount=20.3&label=Foobar
+// => smartcash:Sfra8YaJ5UL7R6ZMg3ZH2pZLcDQP71vFQ5?amount=20.3&label=Foobar
 ```
 
 

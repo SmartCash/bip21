@@ -1,20 +1,20 @@
 {
-  "name": "bip21",
-  "version": "2.0.2",
+  "name": "bip21-smart",
+  "version": "0.0.1",
   "description": "A BIP21 compatible URL encoding utility library",
-  "author": "Daniel Cousens",
+  "author": "SmartCash Developers",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitcoinjs/bip21.git"
+    "url": "https://github.com/SmartCash/bip21.git"
   },
   "bugs": {
-    "url": "https://github.com/bitcoinjs/bip21/issues"
+    "url": "https://github.com/SmartCash/bip21/issues"
   },
-  "homepage": "https://github.com/bitcoinjs/bip21",
+  "homepage": "https://github.com/SmartCash/bip21",
   "keywords": [
     "bip21",
-    "bitcoin"
+    "smartcash"
   ],
   "main": "./index.js",
   "scripts": {
